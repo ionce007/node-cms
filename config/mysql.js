@@ -1,10 +1,10 @@
 const mysql = require('mysql2/promise');
 // 连接池pool（用于普通查询）
 const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'cms',
+    host: 'mysql.sqlpub.com:3306',
+    user: 'hmionce',
+    password: 'a4f26ba3886b4855',
+    database: 'stockblog',
     // debug: true,
 });
 
