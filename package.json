@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env-shell SERVER=http://localhost:3001 npm run server",
+    "start": "node app.js",
     "server": "node bin/www",
     "api": "apidoc -i routes/ -o public/api/",
     "debug": "cross-env-shell DEBUG=express:* npm run start"
