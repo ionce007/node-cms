@@ -54,7 +54,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // 设置跨域资源分享CORS
 // app.use(cors({ credentials: true, origin: /^((https|http|ftp|rtsp|mms)?:\/\/)[^\s]+/ }));
-
+const port = process.env.PORT || 3000;
+app.listen(port, () => {console.log(`App Running on PORT ${port}`)});
 // 校验白名单
 let white_path = [
     '/',
